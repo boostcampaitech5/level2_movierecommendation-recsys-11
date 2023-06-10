@@ -1,0 +1,92 @@
+wandb_version: 1
+
+data_dir:
+  desc: null
+  value: ../data/train/
+min_items_per_user:
+  desc: null
+  value: 5
+min_users_per_item:
+  desc: null
+  value: 0
+heldout_users:
+  desc: null
+  value: 3000
+seed:
+  desc: null
+  value: 42
+cuda:
+  desc: null
+  value: false
+hidden_dim:
+  desc: null
+  value: 600
+latent_dim:
+  desc: null
+  value: 200
+batch_size:
+  desc: null
+  value: 500
+beta:
+  desc: null
+  value: null
+gamma:
+  desc: null
+  value: 0.005
+lr:
+  desc: null
+  value: 0.0005
+weight_decay:
+  desc: null
+  value: 0
+scheduler:
+  desc: null
+  value: CosineAnnealingLR T_max= 100 eta_min=0.0001
+dropout_rate:
+  desc: null
+  value: 0.5
+n_epochs:
+  desc: null
+  value: 200
+n_enc_epochs:
+  desc: null
+  value: 3
+n_dec_epochs:
+  desc: null
+  value: 1
+not_alternating:
+  desc: null
+  value: false
+save:
+  desc: null
+  value: ./ckpts/model_exp2.pt
+_wandb:
+  desc: null
+  value:
+    python_version: 3.8.5
+    cli_version: 0.15.4
+    framework: torch
+    is_jupyter_run: true
+    is_kaggle_kernel: false
+    start_time: 1686431441.034962
+    t:
+      1:
+      - 1
+      - 55
+      2:
+      - 1
+      - 55
+      3:
+      - 2
+      - 15
+      - 16
+      - 17
+      - 23
+      - 37
+      4: 3.8.5
+      5: 0.15.4
+      8:
+      - 1
+      - 5
+      10:
+      - 3

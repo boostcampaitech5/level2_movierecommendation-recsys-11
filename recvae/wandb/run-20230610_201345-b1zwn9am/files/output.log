@@ -1,0 +1,238 @@
+
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.run.save without any arguments is deprecated.Changes to attributes are automatically persisted.
+RecVAE_watchstep_exp1
+After filtering
+============================================
+5154471 events from 31360 users & 6807 movies
+sparsity: 2.415%
+Before shuffling
+================
+Index([    11,     14,     18,     25,     31,     35,     43,     50,     58,
+           60,
+       ...
+       138459, 138461, 138470, 138471, 138472, 138473, 138475, 138486, 138492,
+       138493],
+      dtype='int64', name='user', length=31360)
+After shuffling
+================
+Index([ 81259,  11986,  67552, 127325, 115853,   5192,  93410, 124003,    422,
+       115657,
+       ...
+        27377,  96934,  49486,  52439,  94582, 131351,  23478,   3671,  69383,
+       103755],
+      dtype='int64', name='user', length=31360)
+# of all users: 31360
+# of train users: 25360
+# of validation users: 3000
+# of test users: 3000
+0 users sampled
+1000 users sampled
+2000 users sampled
+0 users sampled
+1000 users sampled
+2000 users sampled
+epoch 0 | valid ndcg@100: 0.2843 | best valid: 0.2843 | train ndcg@100: 0.4519
+epoch 1 | valid ndcg@100: 0.3265 | best valid: 0.3265 | train ndcg@100: 0.5014
+epoch 2 | valid ndcg@100: 0.3432 | best valid: 0.3432 | train ndcg@100: 0.5221
+epoch 3 | valid ndcg@100: 0.3666 | best valid: 0.3666 | train ndcg@100: 0.5507
+epoch 4 | valid ndcg@100: 0.3767 | best valid: 0.3767 | train ndcg@100: 0.5625
+epoch 5 | valid ndcg@100: 0.3847 | best valid: 0.3847 | train ndcg@100: 0.5721
+epoch 6 | valid ndcg@100: 0.3879 | best valid: 0.3879 | train ndcg@100: 0.5764
+epoch 7 | valid ndcg@100: 0.3923 | best valid: 0.3923 | train ndcg@100: 0.5828
+epoch 8 | valid ndcg@100: 0.3982 | best valid: 0.3982 | train ndcg@100: 0.5902
+epoch 9 | valid ndcg@100: 0.4018 | best valid: 0.4018 | train ndcg@100: 0.5971
+epoch 10 | valid ndcg@100: 0.4068 | best valid: 0.4068 | train ndcg@100: 0.6037
+epoch 11 | valid ndcg@100: 0.4098 | best valid: 0.4098 | train ndcg@100: 0.6068
+epoch 12 | valid ndcg@100: 0.4116 | best valid: 0.4116 | train ndcg@100: 0.6090
+epoch 13 | valid ndcg@100: 0.4135 | best valid: 0.4135 | train ndcg@100: 0.6112
+epoch 14 | valid ndcg@100: 0.4150 | best valid: 0.4150 | train ndcg@100: 0.6141
+epoch 15 | valid ndcg@100: 0.4173 | best valid: 0.4173 | train ndcg@100: 0.6167
+epoch 16 | valid ndcg@100: 0.4202 | best valid: 0.4202 | train ndcg@100: 0.6202
+epoch 17 | valid ndcg@100: 0.4218 | best valid: 0.4218 | train ndcg@100: 0.6232
+epoch 18 | valid ndcg@100: 0.4224 | best valid: 0.4224 | train ndcg@100: 0.6254
+epoch 19 | valid ndcg@100: 0.4252 | best valid: 0.4252 | train ndcg@100: 0.6282
+epoch 20 | valid ndcg@100: 0.4275 | best valid: 0.4275 | train ndcg@100: 0.6306
+epoch 21 | valid ndcg@100: 0.4280 | best valid: 0.4280 | train ndcg@100: 0.6336
+epoch 22 | valid ndcg@100: 0.4306 | best valid: 0.4306 | train ndcg@100: 0.6356
+epoch 23 | valid ndcg@100: 0.4319 | best valid: 0.4319 | train ndcg@100: 0.6379
+epoch 24 | valid ndcg@100: 0.4330 | best valid: 0.4330 | train ndcg@100: 0.6402
+epoch 25 | valid ndcg@100: 0.4338 | best valid: 0.4338 | train ndcg@100: 0.6417
+epoch 26 | valid ndcg@100: 0.4346 | best valid: 0.4346 | train ndcg@100: 0.6439
+epoch 27 | valid ndcg@100: 0.4357 | best valid: 0.4357 | train ndcg@100: 0.6462
+epoch 28 | valid ndcg@100: 0.4377 | best valid: 0.4377 | train ndcg@100: 0.6480
+epoch 29 | valid ndcg@100: 0.4378 | best valid: 0.4378 | train ndcg@100: 0.6494
+epoch 30 | valid ndcg@100: 0.4396 | best valid: 0.4396 | train ndcg@100: 0.6519
+epoch 31 | valid ndcg@100: 0.4413 | best valid: 0.4413 | train ndcg@100: 0.6536
+epoch 32 | valid ndcg@100: 0.4412 | best valid: 0.4413 | train ndcg@100: 0.6555
+epoch 33 | valid ndcg@100: 0.4425 | best valid: 0.4425 | train ndcg@100: 0.6577
+epoch 34 | valid ndcg@100: 0.4427 | best valid: 0.4427 | train ndcg@100: 0.6592
+epoch 35 | valid ndcg@100: 0.4422 | best valid: 0.4427 | train ndcg@100: 0.6609
+epoch 36 | valid ndcg@100: 0.4444 | best valid: 0.4444 | train ndcg@100: 0.6623
+epoch 37 | valid ndcg@100: 0.4454 | best valid: 0.4454 | train ndcg@100: 0.6631
+epoch 38 | valid ndcg@100: 0.4454 | best valid: 0.4454 | train ndcg@100: 0.6648
+epoch 39 | valid ndcg@100: 0.4464 | best valid: 0.4464 | train ndcg@100: 0.6656
+epoch 40 | valid ndcg@100: 0.4465 | best valid: 0.4465 | train ndcg@100: 0.6667
+epoch 41 | valid ndcg@100: 0.4480 | best valid: 0.4480 | train ndcg@100: 0.6678
+epoch 42 | valid ndcg@100: 0.4472 | best valid: 0.4480 | train ndcg@100: 0.6685
+epoch 43 | valid ndcg@100: 0.4487 | best valid: 0.4487 | train ndcg@100: 0.6696
+epoch 44 | valid ndcg@100: 0.4497 | best valid: 0.4497 | train ndcg@100: 0.6709
+epoch 45 | valid ndcg@100: 0.4492 | best valid: 0.4497 | train ndcg@100: 0.6710
+epoch 46 | valid ndcg@100: 0.4499 | best valid: 0.4499 | train ndcg@100: 0.6721
+epoch 47 | valid ndcg@100: 0.4497 | best valid: 0.4499 | train ndcg@100: 0.6723
+epoch 48 | valid ndcg@100: 0.4502 | best valid: 0.4502 | train ndcg@100: 0.6734
+epoch 49 | valid ndcg@100: 0.4504 | best valid: 0.4504 | train ndcg@100: 0.6742
+epoch 50 | valid ndcg@100: 0.4521 | best valid: 0.4521 | train ndcg@100: 0.6747
+epoch 51 | valid ndcg@100: 0.4516 | best valid: 0.4521 | train ndcg@100: 0.6758
+epoch 52 | valid ndcg@100: 0.4515 | best valid: 0.4521 | train ndcg@100: 0.6763
+epoch 53 | valid ndcg@100: 0.4514 | best valid: 0.4521 | train ndcg@100: 0.6771
+epoch 54 | valid ndcg@100: 0.4528 | best valid: 0.4528 | train ndcg@100: 0.6775
+epoch 55 | valid ndcg@100: 0.4533 | best valid: 0.4533 | train ndcg@100: 0.6781
+epoch 56 | valid ndcg@100: 0.4527 | best valid: 0.4533 | train ndcg@100: 0.6788
+epoch 57 | valid ndcg@100: 0.4524 | best valid: 0.4533 | train ndcg@100: 0.6793
+epoch 58 | valid ndcg@100: 0.4536 | best valid: 0.4536 | train ndcg@100: 0.6798
+epoch 59 | valid ndcg@100: 0.4532 | best valid: 0.4536 | train ndcg@100: 0.6803
+epoch 60 | valid ndcg@100: 0.4536 | best valid: 0.4536 | train ndcg@100: 0.6806
+epoch 61 | valid ndcg@100: 0.4530 | best valid: 0.4536 | train ndcg@100: 0.6813
+epoch 62 | valid ndcg@100: 0.4533 | best valid: 0.4536 | train ndcg@100: 0.6820
+epoch 63 | valid ndcg@100: 0.4531 | best valid: 0.4536 | train ndcg@100: 0.6820
+epoch 64 | valid ndcg@100: 0.4535 | best valid: 0.4536 | train ndcg@100: 0.6823
+epoch 65 | valid ndcg@100: 0.4537 | best valid: 0.4537 | train ndcg@100: 0.6826
+epoch 66 | valid ndcg@100: 0.4539 | best valid: 0.4539 | train ndcg@100: 0.6832
+epoch 67 | valid ndcg@100: 0.4536 | best valid: 0.4539 | train ndcg@100: 0.6834
+epoch 68 | valid ndcg@100: 0.4549 | best valid: 0.4549 | train ndcg@100: 0.6837
+epoch 69 | valid ndcg@100: 0.4547 | best valid: 0.4549 | train ndcg@100: 0.6844
+epoch 70 | valid ndcg@100: 0.4541 | best valid: 0.4549 | train ndcg@100: 0.6849
+epoch 71 | valid ndcg@100: 0.4541 | best valid: 0.4549 | train ndcg@100: 0.6855
+epoch 72 | valid ndcg@100: 0.4540 | best valid: 0.4549 | train ndcg@100: 0.6850
+epoch 73 | valid ndcg@100: 0.4540 | best valid: 0.4549 | train ndcg@100: 0.6858
+epoch 74 | valid ndcg@100: 0.4545 | best valid: 0.4549 | train ndcg@100: 0.6859
+epoch 75 | valid ndcg@100: 0.4543 | best valid: 0.4549 | train ndcg@100: 0.6862
+epoch 76 | valid ndcg@100: 0.4549 | best valid: 0.4549 | train ndcg@100: 0.6867
+epoch 77 | valid ndcg@100: 0.4549 | best valid: 0.4549 | train ndcg@100: 0.6874
+epoch 78 | valid ndcg@100: 0.4540 | best valid: 0.4549 | train ndcg@100: 0.6874
+epoch 79 | valid ndcg@100: 0.4547 | best valid: 0.4549 | train ndcg@100: 0.6876
+epoch 80 | valid ndcg@100: 0.4541 | best valid: 0.4549 | train ndcg@100: 0.6878
+epoch 81 | valid ndcg@100: 0.4544 | best valid: 0.4549 | train ndcg@100: 0.6881
+epoch 82 | valid ndcg@100: 0.4541 | best valid: 0.4549 | train ndcg@100: 0.6886
+epoch 83 | valid ndcg@100: 0.4540 | best valid: 0.4549 | train ndcg@100: 0.6882
+epoch 84 | valid ndcg@100: 0.4537 | best valid: 0.4549 | train ndcg@100: 0.6889
+epoch 85 | valid ndcg@100: 0.4541 | best valid: 0.4549 | train ndcg@100: 0.6889
+epoch 86 | valid ndcg@100: 0.4534 | best valid: 0.4549 | train ndcg@100: 0.6893
+epoch 87 | valid ndcg@100: 0.4541 | best valid: 0.4549 | train ndcg@100: 0.6894
+epoch 88 | valid ndcg@100: 0.4541 | best valid: 0.4549 | train ndcg@100: 0.6889
+epoch 89 | valid ndcg@100: 0.4538 | best valid: 0.4549 | train ndcg@100: 0.6894
+epoch 90 | valid ndcg@100: 0.4531 | best valid: 0.4549 | train ndcg@100: 0.6894
+epoch 91 | valid ndcg@100: 0.4542 | best valid: 0.4549 | train ndcg@100: 0.6896
+epoch 92 | valid ndcg@100: 0.4536 | best valid: 0.4549 | train ndcg@100: 0.6899
+epoch 93 | valid ndcg@100: 0.4541 | best valid: 0.4549 | train ndcg@100: 0.6901
+epoch 94 | valid ndcg@100: 0.4538 | best valid: 0.4549 | train ndcg@100: 0.6904
+epoch 95 | valid ndcg@100: 0.4534 | best valid: 0.4549 | train ndcg@100: 0.6907
+epoch 96 | valid ndcg@100: 0.4547 | best valid: 0.4549 | train ndcg@100: 0.6905
+epoch 97 | valid ndcg@100: 0.4541 | best valid: 0.4549 | train ndcg@100: 0.6907
+epoch 98 | valid ndcg@100: 0.4538 | best valid: 0.4549 | train ndcg@100: 0.6904
+epoch 99 | valid ndcg@100: 0.4529 | best valid: 0.4549 | train ndcg@100: 0.6904
+epoch 100 | valid ndcg@100: 0.4549 | best valid: 0.4549 | train ndcg@100: 0.6910
+epoch 101 | valid ndcg@100: 0.4537 | best valid: 0.4549 | train ndcg@100: 0.6908
+epoch 102 | valid ndcg@100: 0.4537 | best valid: 0.4549 | train ndcg@100: 0.6913
+epoch 103 | valid ndcg@100: 0.4531 | best valid: 0.4549 | train ndcg@100: 0.6912
+epoch 104 | valid ndcg@100: 0.4528 | best valid: 0.4549 | train ndcg@100: 0.6909
+epoch 105 | valid ndcg@100: 0.4529 | best valid: 0.4549 | train ndcg@100: 0.6909
+epoch 106 | valid ndcg@100: 0.4541 | best valid: 0.4549 | train ndcg@100: 0.6916
+epoch 107 | valid ndcg@100: 0.4530 | best valid: 0.4549 | train ndcg@100: 0.6916
+epoch 108 | valid ndcg@100: 0.4531 | best valid: 0.4549 | train ndcg@100: 0.6917
+epoch 109 | valid ndcg@100: 0.4537 | best valid: 0.4549 | train ndcg@100: 0.6918
+epoch 110 | valid ndcg@100: 0.4527 | best valid: 0.4549 | train ndcg@100: 0.6918
+epoch 111 | valid ndcg@100: 0.4534 | best valid: 0.4549 | train ndcg@100: 0.6919
+epoch 112 | valid ndcg@100: 0.4527 | best valid: 0.4549 | train ndcg@100: 0.6918
+epoch 113 | valid ndcg@100: 0.4527 | best valid: 0.4549 | train ndcg@100: 0.6915
+epoch 114 | valid ndcg@100: 0.4531 | best valid: 0.4549 | train ndcg@100: 0.6912
+epoch 115 | valid ndcg@100: 0.4526 | best valid: 0.4549 | train ndcg@100: 0.6914
+epoch 116 | valid ndcg@100: 0.4527 | best valid: 0.4549 | train ndcg@100: 0.6916
+epoch 117 | valid ndcg@100: 0.4530 | best valid: 0.4549 | train ndcg@100: 0.6918
+epoch 118 | valid ndcg@100: 0.4528 | best valid: 0.4549 | train ndcg@100: 0.6920
+epoch 119 | valid ndcg@100: 0.4519 | best valid: 0.4549 | train ndcg@100: 0.6916
+epoch 120 | valid ndcg@100: 0.4523 | best valid: 0.4549 | train ndcg@100: 0.6918
+epoch 121 | valid ndcg@100: 0.4521 | best valid: 0.4549 | train ndcg@100: 0.6915
+epoch 122 | valid ndcg@100: 0.4525 | best valid: 0.4549 | train ndcg@100: 0.6916
+epoch 123 | valid ndcg@100: 0.4522 | best valid: 0.4549 | train ndcg@100: 0.6918
+epoch 124 | valid ndcg@100: 0.4521 | best valid: 0.4549 | train ndcg@100: 0.6918
+epoch 125 | valid ndcg@100: 0.4525 | best valid: 0.4549 | train ndcg@100: 0.6919
+epoch 126 | valid ndcg@100: 0.4523 | best valid: 0.4549 | train ndcg@100: 0.6919
+epoch 127 | valid ndcg@100: 0.4523 | best valid: 0.4549 | train ndcg@100: 0.6917
+epoch 128 | valid ndcg@100: 0.4520 | best valid: 0.4549 | train ndcg@100: 0.6915
+epoch 129 | valid ndcg@100: 0.4515 | best valid: 0.4549 | train ndcg@100: 0.6914
+epoch 130 | valid ndcg@100: 0.4523 | best valid: 0.4549 | train ndcg@100: 0.6918
+epoch 131 | valid ndcg@100: 0.4516 | best valid: 0.4549 | train ndcg@100: 0.6918
+epoch 132 | valid ndcg@100: 0.4517 | best valid: 0.4549 | train ndcg@100: 0.6921
+epoch 133 | valid ndcg@100: 0.4512 | best valid: 0.4549 | train ndcg@100: 0.6918
+epoch 134 | valid ndcg@100: 0.4513 | best valid: 0.4549 | train ndcg@100: 0.6918
+epoch 135 | valid ndcg@100: 0.4517 | best valid: 0.4549 | train ndcg@100: 0.6918
+epoch 136 | valid ndcg@100: 0.4516 | best valid: 0.4549 | train ndcg@100: 0.6917
+epoch 137 | valid ndcg@100: 0.4523 | best valid: 0.4549 | train ndcg@100: 0.6920
+epoch 138 | valid ndcg@100: 0.4511 | best valid: 0.4549 | train ndcg@100: 0.6914
+epoch 139 | valid ndcg@100: 0.4511 | best valid: 0.4549 | train ndcg@100: 0.6916
+epoch 140 | valid ndcg@100: 0.4513 | best valid: 0.4549 | train ndcg@100: 0.6914
+epoch 141 | valid ndcg@100: 0.4517 | best valid: 0.4549 | train ndcg@100: 0.6917
+epoch 142 | valid ndcg@100: 0.4509 | best valid: 0.4549 | train ndcg@100: 0.6917
+epoch 143 | valid ndcg@100: 0.4507 | best valid: 0.4549 | train ndcg@100: 0.6915
+epoch 144 | valid ndcg@100: 0.4499 | best valid: 0.4549 | train ndcg@100: 0.6916
+epoch 145 | valid ndcg@100: 0.4502 | best valid: 0.4549 | train ndcg@100: 0.6913
+epoch 146 | valid ndcg@100: 0.4502 | best valid: 0.4549 | train ndcg@100: 0.6908
+epoch 147 | valid ndcg@100: 0.4505 | best valid: 0.4549 | train ndcg@100: 0.6911
+epoch 148 | valid ndcg@100: 0.4496 | best valid: 0.4549 | train ndcg@100: 0.6913
+epoch 149 | valid ndcg@100: 0.4501 | best valid: 0.4549 | train ndcg@100: 0.6909
+epoch 150 | valid ndcg@100: 0.4504 | best valid: 0.4549 | train ndcg@100: 0.6910
+epoch 151 | valid ndcg@100: 0.4503 | best valid: 0.4549 | train ndcg@100: 0.6908
+epoch 152 | valid ndcg@100: 0.4499 | best valid: 0.4549 | train ndcg@100: 0.6909
+epoch 153 | valid ndcg@100: 0.4506 | best valid: 0.4549 | train ndcg@100: 0.6905
+epoch 154 | valid ndcg@100: 0.4501 | best valid: 0.4549 | train ndcg@100: 0.6905
+epoch 155 | valid ndcg@100: 0.4497 | best valid: 0.4549 | train ndcg@100: 0.6903
+epoch 156 | valid ndcg@100: 0.4498 | best valid: 0.4549 | train ndcg@100: 0.6903
+epoch 157 | valid ndcg@100: 0.4498 | best valid: 0.4549 | train ndcg@100: 0.6899
+epoch 158 | valid ndcg@100: 0.4490 | best valid: 0.4549 | train ndcg@100: 0.6899
+epoch 159 | valid ndcg@100: 0.4506 | best valid: 0.4549 | train ndcg@100: 0.6900
+epoch 160 | valid ndcg@100: 0.4493 | best valid: 0.4549 | train ndcg@100: 0.6900
+epoch 161 | valid ndcg@100: 0.4496 | best valid: 0.4549 | train ndcg@100: 0.6898
+epoch 162 | valid ndcg@100: 0.4500 | best valid: 0.4549 | train ndcg@100: 0.6896
+epoch 163 | valid ndcg@100: 0.4496 | best valid: 0.4549 | train ndcg@100: 0.6897
+epoch 164 | valid ndcg@100: 0.4491 | best valid: 0.4549 | train ndcg@100: 0.6895
+epoch 165 | valid ndcg@100: 0.4487 | best valid: 0.4549 | train ndcg@100: 0.6897
+epoch 166 | valid ndcg@100: 0.4484 | best valid: 0.4549 | train ndcg@100: 0.6895
+epoch 167 | valid ndcg@100: 0.4484 | best valid: 0.4549 | train ndcg@100: 0.6892
+epoch 168 | valid ndcg@100: 0.4479 | best valid: 0.4549 | train ndcg@100: 0.6898
+epoch 169 | valid ndcg@100: 0.4486 | best valid: 0.4549 | train ndcg@100: 0.6894
+epoch 170 | valid ndcg@100: 0.4484 | best valid: 0.4549 | train ndcg@100: 0.6892
+epoch 171 | valid ndcg@100: 0.4482 | best valid: 0.4549 | train ndcg@100: 0.6888
+epoch 172 | valid ndcg@100: 0.4478 | best valid: 0.4549 | train ndcg@100: 0.6888
+epoch 173 | valid ndcg@100: 0.4468 | best valid: 0.4549 | train ndcg@100: 0.6883
+epoch 174 | valid ndcg@100: 0.4476 | best valid: 0.4549 | train ndcg@100: 0.6886
+epoch 175 | valid ndcg@100: 0.4491 | best valid: 0.4549 | train ndcg@100: 0.6884
+epoch 176 | valid ndcg@100: 0.4483 | best valid: 0.4549 | train ndcg@100: 0.6882
+epoch 177 | valid ndcg@100: 0.4470 | best valid: 0.4549 | train ndcg@100: 0.6882
+epoch 178 | valid ndcg@100: 0.4474 | best valid: 0.4549 | train ndcg@100: 0.6880
+epoch 179 | valid ndcg@100: 0.4480 | best valid: 0.4549 | train ndcg@100: 0.6879
+epoch 180 | valid ndcg@100: 0.4476 | best valid: 0.4549 | train ndcg@100: 0.6878
+epoch 181 | valid ndcg@100: 0.4482 | best valid: 0.4549 | train ndcg@100: 0.6874
+epoch 182 | valid ndcg@100: 0.4473 | best valid: 0.4549 | train ndcg@100: 0.6871
+epoch 183 | valid ndcg@100: 0.4482 | best valid: 0.4549 | train ndcg@100: 0.6873
+epoch 184 | valid ndcg@100: 0.4462 | best valid: 0.4549 | train ndcg@100: 0.6869
+epoch 185 | valid ndcg@100: 0.4469 | best valid: 0.4549 | train ndcg@100: 0.6867
+epoch 186 | valid ndcg@100: 0.4470 | best valid: 0.4549 | train ndcg@100: 0.6868
+epoch 187 | valid ndcg@100: 0.4469 | best valid: 0.4549 | train ndcg@100: 0.6865
+epoch 188 | valid ndcg@100: 0.4472 | best valid: 0.4549 | train ndcg@100: 0.6863
+epoch 189 | valid ndcg@100: 0.4471 | best valid: 0.4549 | train ndcg@100: 0.6867
+epoch 190 | valid ndcg@100: 0.4465 | best valid: 0.4549 | train ndcg@100: 0.6861
+epoch 191 | valid ndcg@100: 0.4476 | best valid: 0.4549 | train ndcg@100: 0.6860
+epoch 192 | valid ndcg@100: 0.4471 | best valid: 0.4549 | train ndcg@100: 0.6857
+epoch 193 | valid ndcg@100: 0.4466 | best valid: 0.4549 | train ndcg@100: 0.6860
+epoch 194 | valid ndcg@100: 0.4465 | best valid: 0.4549 | train ndcg@100: 0.6855
+epoch 195 | valid ndcg@100: 0.4464 | best valid: 0.4549 | train ndcg@100: 0.6854
+epoch 196 | valid ndcg@100: 0.4460 | best valid: 0.4549 | train ndcg@100: 0.6853
+epoch 197 | valid ndcg@100: 0.4463 | best valid: 0.4549 | train ndcg@100: 0.6850
+epoch 198 | valid ndcg@100: 0.4452 | best valid: 0.4549 | train ndcg@100: 0.6852
+epoch 199 | valid ndcg@100: 0.4457 | best valid: 0.4549 | train ndcg@100: 0.6851
+ndcg@100:	0.4567
+recall@20:	0.3606
+recall@50:	0.4224
+# of items: 6807
+# of users: 31360

@@ -1,0 +1,58 @@
+
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.run.save without any arguments is deprecated.Changes to attributes are automatically persisted.
+RecVAE_watchstep_exp1
+After filtering
+============================================
+5154471 events from 31360 users & 6807 movies
+sparsity: 2.415%
+Before shuffling
+================
+Index([    11,     14,     18,     25,     31,     35,     43,     50,     58,
+           60,
+       ...
+       138459, 138461, 138470, 138471, 138472, 138473, 138475, 138486, 138492,
+       138493],
+      dtype='int64', name='user', length=31360)
+After shuffling
+================
+Index([ 81259,  11986,  67552, 127325, 115853,   5192,  93410, 124003,    422,
+       115657,
+       ...
+        27377,  96934,  49486,  52439,  94582, 131351,  23478,   3671,  69383,
+       103755],
+      dtype='int64', name='user', length=31360)
+# of all users: 31360
+# of train users: 25360
+# of validation users: 3000
+# of test users: 3000
+0 users sampled
+1000 users sampled
+2000 users sampled
+0 users sampled
+1000 users sampled
+2000 users sampled
+epoch 0 | valid ndcg@100: 0.2843 | best valid: 0.2843 | train ndcg@100: 0.4519
+epoch 1 | valid ndcg@100: 0.3265 | best valid: 0.3265 | train ndcg@100: 0.5014
+epoch 2 | valid ndcg@100: 0.3432 | best valid: 0.3432 | train ndcg@100: 0.5221
+epoch 3 | valid ndcg@100: 0.3666 | best valid: 0.3666 | train ndcg@100: 0.5507
+epoch 4 | valid ndcg@100: 0.3767 | best valid: 0.3767 | train ndcg@100: 0.5625
+epoch 5 | valid ndcg@100: 0.3847 | best valid: 0.3847 | train ndcg@100: 0.5721
+epoch 6 | valid ndcg@100: 0.3879 | best valid: 0.3879 | train ndcg@100: 0.5764
+epoch 7 | valid ndcg@100: 0.3923 | best valid: 0.3923 | train ndcg@100: 0.5828
+epoch 8 | valid ndcg@100: 0.3982 | best valid: 0.3982 | train ndcg@100: 0.5902
+epoch 9 | valid ndcg@100: 0.4018 | best valid: 0.4018 | train ndcg@100: 0.5971
+epoch 10 | valid ndcg@100: 0.4068 | best valid: 0.4068 | train ndcg@100: 0.6037
+epoch 11 | valid ndcg@100: 0.4098 | best valid: 0.4098 | train ndcg@100: 0.6068
+epoch 12 | valid ndcg@100: 0.4116 | best valid: 0.4116 | train ndcg@100: 0.6090
+epoch 13 | valid ndcg@100: 0.4135 | best valid: 0.4135 | train ndcg@100: 0.6112
+epoch 14 | valid ndcg@100: 0.4150 | best valid: 0.4150 | train ndcg@100: 0.6141
+epoch 15 | valid ndcg@100: 0.4173 | best valid: 0.4173 | train ndcg@100: 0.6167
+epoch 16 | valid ndcg@100: 0.4202 | best valid: 0.4202 | train ndcg@100: 0.6202
+epoch 17 | valid ndcg@100: 0.4218 | best valid: 0.4218 | train ndcg@100: 0.6232
+epoch 18 | valid ndcg@100: 0.4224 | best valid: 0.4224 | train ndcg@100: 0.6254
+epoch 19 | valid ndcg@100: 0.4252 | best valid: 0.4252 | train ndcg@100: 0.6282
+epoch 20 | valid ndcg@100: 0.4275 | best valid: 0.4275 | train ndcg@100: 0.6306
+epoch 21 | valid ndcg@100: 0.4280 | best valid: 0.4280 | train ndcg@100: 0.6336
+epoch 22 | valid ndcg@100: 0.4306 | best valid: 0.4306 | train ndcg@100: 0.6356
+epoch 23 | valid ndcg@100: 0.4319 | best valid: 0.4319 | train ndcg@100: 0.6379
+epoch 24 | valid ndcg@100: 0.4330 | best valid: 0.4330 | train ndcg@100: 0.6402
