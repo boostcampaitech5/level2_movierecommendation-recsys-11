@@ -1,0 +1,8 @@
+# dataset config : General Recommendation
+USER_ID_FIELD: user_id
+ITEM_ID_FIELD: item_id
+TIME_FIELD: timestamp
+
+rm_dup_inter: False
+user_inter_num_interval: "[0, inf)"
+item_inter_num_interval: "[0, inf)"
