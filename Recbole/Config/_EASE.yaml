@@ -1,0 +1,62 @@
+# 환경 설정
+
+gpu_id: 0
+use_gpu: True
+seed: 25
+state: 'INFO'
+encoding: 'utf-8'
+reproducibility: True
+data_path: data
+checkpoint_dir: 'model/'
+show_progress: True
+save_dataset: False
+dataset_save_path: None
+save_dataloaders: False
+dataloaders_save_path: None
+# log_wandb: True
+# wandb_entity: 'new-recs'
+# wandb_project: 'movierec'
+
+# 데이터셋 정보 입력
+
+USER_ID_FIELD: user_id
+ITEM_ID_FIELD: item_id
+TIME_FIELD: timestamp
+load_col: {"inter": ["user_id", "item_id", "timestamp"]}
+
+rm_dup_inter: False
+user_inter_num_interval: "[0, inf)"
+item_inter_num_interval: "[0, inf)"
+
+# 학습 하이퍼파라미터 설정
+
+epochs: 20
+train_batch_size: 2048
+learner: 'sgd'
+learning_rate: 0.0001
+train_neg_sample_args: {'distribution': 'uniform'}
+eval_step: 1
+stopping_step: 10
+loss_decimal_place: 4
+weight_decay: 0.000
+
+# 모델 정보 입력
+
+reg_weight : 350.0  
+model: DMF
+dataset: movie
+
+# 평가 정보 입력
+
+eval_args:
+    split: {"LS": 'test_only'}
+    group_by: user
+    order: RO
+    mode: full
+repeatable: False
+metrics: ['Recall', 'MRR', 'NDCG', 'Hit', 'Precision']
+topk: 10
+valid_metric: Recall@10
+eval_batch_size: 4096
+metric_decimal_place: 4
+
