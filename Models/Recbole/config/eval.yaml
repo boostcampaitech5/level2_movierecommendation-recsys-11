@@ -1,0 +1,12 @@
+#Evaluation Settings
+eval_args:
+    split: {"LS": 'test_only'}
+    group_by: user
+    order: RO
+    mode: full
+repeatable: False
+metrics: ['Recall', 'MRR', 'NDCG', 'Hit', 'Precision']
+topk: 10
+valid_metric: Recall@10
+eval_batch_size: 4096
+metric_decimal_place: 4
