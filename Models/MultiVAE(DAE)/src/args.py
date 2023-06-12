@@ -32,8 +32,8 @@ def parse_args():
                         help='report interval')
     parser.add_argument('--save', type=str, default='model/model.pt',
                         help='path to save the final model')
-    parser.add_argument('--train_data', choices=['full', 'split'], default='full',
-                        help='Train dataset range (full / split)')
+    parser.add_argument('--mode', choices=['tuning', 'submission'], default='tuning',
+                        help='Train dataset range (tuning: split / submission: full)')
     
     args = parser.parse_args()
 
