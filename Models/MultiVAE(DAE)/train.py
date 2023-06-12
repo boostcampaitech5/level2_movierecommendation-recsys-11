@@ -21,15 +21,19 @@ def main(args):
     set_seeds(args.seed)
     args.device = "cuda" if torch.cuda.is_available() else "cpu"
     logger.info("🐰 TEAM NewRecs")
-
-    # WandB Settings
+    if args.mode == 'tuning':
+        logger.info(f"Mode: {args.mode} - Not create submission file | Traning Dataset: Full")
+    elif args.mode == 'submission':
+        logger.info(f"Mode: {args.mode} - Create submission file | Traning Dataset: Split")
+    
+    # Weights & Biases Settings
     logger.info("1. Weights & Biases Settings ...")
     wandb.login()
     wandb_config, model_name, author, project, entity = wandb_settings(args)
     wandb.init(project=project, entity=entity, config=wandb_config)
     
     now = datetime.now(timezone(timedelta(hours=9)))
-    wandb.run.name = model_name + '_' + author + ' ' + now.strftime("%m/%d %H:%M")
+    wandb.run.name = f"{model_name}_{author}_{args.mode} {now.strftime('%m/%d %H:%M')}"
     
     # DATA Preprocessing
     logger.info("2. Data Preprocessing ...")
@@ -66,19 +70,20 @@ def main(args):
     logger.info("5. Training ...")
     run(args, model, criterion, optimizer, train_data, vad_data_tr, vad_data_te, test_data_tr, test_data_te, N, idxlist)
     
-    # Create Submission File
-    logger.info("6. Creating Submission File ...")
-    top_items = submission(args, model, train_data)
-    result = pd.DataFrame(top_items, columns=['user', 'item'])
+    if args.mode == 'submission':
+        # Create Submission File
+        logger.info("6. Creating Submission File ...")
+        top_items = submission(args, model, train_data)
+        result = pd.DataFrame(top_items, columns=['user', 'item'])
 
-    result['user'] = result['user'].apply(lambda x : id2profile[x])
-    result['item'] = result['item'].apply(lambda x : id2show[x])
-    result = result.sort_values(by='user')
-    
-    KST = timezone(timedelta(hours=9))
-    record_time = datetime.now(KST)
-    write_path = os.path.join(f"./submit/{args.model}_submission_{record_time.strftime('%Y-%m-%d_%H-%M-%S')}.csv")
-    result.to_csv(write_path, index=False)
+        result['user'] = result['user'].apply(lambda x : id2profile[x])
+        result['item'] = result['item'].apply(lambda x : id2show[x])
+        result = result.sort_values(by='user')
+        
+        KST = timezone(timedelta(hours=9))
+        record_time = datetime.now(KST)
+        write_path = os.path.join(f"./submit/{args.model}_submission_{record_time.strftime('%Y-%m-%d_%H-%M-%S')}.csv")
+        result.to_csv(write_path, index=False)
     
     logger.info("💫 Complete!")
 if __name__ == "__main__":
