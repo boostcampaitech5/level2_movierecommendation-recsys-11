@@ -22,9 +22,9 @@ def main(args):
     args.device = "cuda" if torch.cuda.is_available() else "cpu"
     logger.info("🐰 TEAM NewRecs")
     if args.mode == 'tuning':
-        logger.info(f"Mode: {args.mode} - Not create submission file | Traning Dataset: Full")
+        logger.info(f"Mode: {args.mode} - Not create submission file | Traning Dataset: Split")
     elif args.mode == 'submission':
-        logger.info(f"Mode: {args.mode} - Create submission file | Traning Dataset: Split")
+        logger.info(f"Mode: {args.mode} - Create submission file | Traning Dataset: Full")
     
     # Weights & Biases Settings
     logger.info("1. Weights & Biases Settings ...")
