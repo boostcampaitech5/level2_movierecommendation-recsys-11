@@ -105,9 +105,9 @@ class Preprocess:
     def data_split(self, args, raw_data, unique_uid, tr_users, vd_users, te_users):
         
         # 훈련에 사용할 데이터 [full or split]
-        if args.train_data == 'full':
+        if args.mode == 'submission':
             train_plays = raw_data.loc[raw_data['user'].isin(unique_uid)]
-        elif args.train_data == 'split':
+        elif args.mode == 'tuning':
             train_plays = raw_data.loc[raw_data['user'].isin(tr_users)]
         
 
