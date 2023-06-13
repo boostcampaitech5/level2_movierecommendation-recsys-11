@@ -18,7 +18,6 @@ from tqdm import tqdm
 from utils import *
 
 model_types = ["sequential", "general", "context_aware", "knowledge_aware", "exlib"]
-# model_type_list = ["sequential", "general", "context_aware", "knowledge_aware", "exlib"]
 
 if __name__ == "__main__":
 
@@ -33,7 +32,7 @@ if __name__ == "__main__":
 
     # choose file to inference
     # default: latest file
-    BASE_DIR = "./saved"
+    BASE_DIR = "./model"
     FILE = ""
     file_list = os.listdir(BASE_DIR)
     print(file_list)
