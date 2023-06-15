@@ -14,8 +14,13 @@ from recbole.trainer import Trainer
 from recbole.utils import get_model, init_logger, init_seed
 from recbole.utils.case_study import full_sort_scores, full_sort_topk
 from tqdm import tqdm
+from datetime import datetime, timezone, timedelta
 
 from utils import *
+
+# set record_time
+KST = timezone(timedelta(hours=9))
+record_time = datetime.now(KST)
 
 model_types = ["sequential", "general", "context_aware", "knowledge_aware", "exlib"]
 
@@ -40,9 +45,11 @@ if __name__ == "__main__":
     if len(file_list) == 0:
         sys.exit(f"There is no .pth file in {BASE_DIR}")
     else:
-        sorted_file_list = sorted(file_list, reverse=True)
+        # TODO: pth 파일 이름 바꿔서 6-12-2023 이런식으로 변경하기 
+        sorted_file_list = sorted(file_list, reverse=True, key=lambda x: x.split("-")[1:]) # 다 6월이니까 일단은..
         recent_file = sorted_file_list[0]
         FILE = recent_file
+        print(FILE)
 
     # load model
     model_name = FILE.split("-")[0]
@@ -76,4 +83,7 @@ if __name__ == "__main__":
     else: # General, Context_aware, Knowledge_aware, Exlib Model
         prediction = generate_predict(dataset, test_data, model, config)
 
-    gererate_submission_from_prediction(prediction=prediction)
+    output_dir =  f"./submission/{model_name}_{record_time.strftime('%Y-%m-%d_%H-%M-%S')}.csv"
+    submission = gererate_submission_from_prediction(prediction=prediction)
+    submission.to_csv(output_dir, index=False)
+    # gererate_submission_from_prediction(prediction=prediction)
