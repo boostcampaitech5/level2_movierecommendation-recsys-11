@@ -86,4 +86,3 @@ if __name__ == "__main__":
     output_dir =  f"./submission/{model_name}_{record_time.strftime('%Y-%m-%d_%H-%M-%S')}.csv"
     submission = gererate_submission_from_prediction(prediction=prediction)
     submission.to_csv(output_dir, index=False)
-    # gererate_submission_from_prediction(prediction=prediction)

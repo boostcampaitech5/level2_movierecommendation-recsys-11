@@ -151,7 +151,6 @@ def generate_predict_seq(dataset,
 
 def gererate_submission_from_prediction(prediction,
                                         user_data_file="./data/movie/unique_user.csv",
-                                        # output_dir="./submission/RecBole_submission.csv",
 ):
     """
     Generate submission file from prediction list
@@ -166,5 +165,5 @@ def gererate_submission_from_prediction(prediction,
     for index, user in enumerate(users):
         for item in prediction[index]:
             result.append([user, item])
-            
+
     return pd.DataFrame(result, columns=["user", "item"])
