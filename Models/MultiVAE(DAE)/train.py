@@ -37,7 +37,7 @@ def main(args):
     
     # DATA Preprocessing
     logger.info("2. Data Preprocessing ...")
-    raw_data, unique_uid, tr_users, vd_users, te_users = Preprocess(args).load_data_from_file(args)
+    raw_data, unique_uid, tr_users, vd_users, te_users, n_users = Preprocess(args).load_data_from_file(args)
     unique_sid, show2id, profile2id, id2show, id2profile = Preprocess(args).data_split(args, raw_data, unique_uid, tr_users, vd_users, te_users)
     
     # Data Loading
