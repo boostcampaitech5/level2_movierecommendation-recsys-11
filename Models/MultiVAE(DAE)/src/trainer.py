@@ -17,7 +17,7 @@ def run(args, model, criterion, optimizer, train_data, vad_data_tr, vad_data_te,
         if args.model == 'MultiVAE':
             is_VAE = True
         elif args.model == 'MultiDAE':
-            if_VAE = False
+            is_VAE = False
         train(args, model, criterion, optimizer, is_VAE, N, idxlist, train_data, epoch)
         val_loss, n100, r10, r20, r50 = evaluate(args, model, criterion, vad_data_tr, vad_data_te, is_VAE, N)
         logger.info('🚀 | Epoch: {:2d} | valid loss {:4.2f} | '
