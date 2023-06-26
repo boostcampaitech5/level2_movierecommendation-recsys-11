@@ -67,35 +67,8 @@
 | 최민수 | RecBole template 구축,  모델 구현/실현 (EASE, DeepFM, NCF) |
 </div>
 
-## 모델과 앙상블 성능
-<div align="center">
 
-단일 모델 성능
-
-| Model | EASE | ADMMSLIM | MultiVAE | RecVAE | S3Rec | GRU4Rec |
-|:---------:|:------:|:----------:|:----------:|:--------:|:-------:|:---------:|
-| **Recall@10** | 0.1594 | 0.1546 | 0.1403 | 0.1514 | 0.0898 | 0.051 |
-
-<br><br>
-
-앙상블 성능
-
-![Untitled](https://github.com/boostcampaitech5/level2_movierecommendation-recsys-11/assets/93419379/5e17a671-aedf-4a17-bcc6-57507e86e1fc)
-
-<br><br>
-
-**최종 성능**
-
-||🔒 Private|🔑 Public|
-|:---:|:---:|:---:|
-|Recall@10|0.1637|0.1648|
-
-구체적인 앙상블 실험은 랩업 리포트 참조
-
-
-</div>
-
-## 데이터셋 구조
+## Dataset
 
 ```
 data/
@@ -106,3 +79,31 @@ data/
 ├── writers.tsv
 └── years.tsv
 ```
+
+
+## Models & Ensemble
+<div align="center">
+
+단일 모델 성능
+
+| Model | EASE | ADMMSLIM | MultiVAE | RecVAE | S3Rec | GRU4Rec |
+|:---------:|:------:|:----------:|:----------:|:--------:|:-------:|:---------:|
+| **Recall@10** | 0.1594 | 0.1546 | 0.1403 | 0.1514 | 0.0898 | 0.051 |
+
+<br>
+
+앙상블 성능
+
+![Untitled](https://github.com/boostcampaitech5/level2_movierecommendation-recsys-11/assets/93419379/5e17a671-aedf-4a17-bcc6-57507e86e1fc)
+
+<br>
+
+**최종 성능**
+
+||🔒 Private|🔑 Public|
+|:---:|:---:|:---:|
+|Recall@10|0.1637|0.1648|
+
+구체적인 앙상블 실험은 랩업 리포트 참조
+
+</div>
