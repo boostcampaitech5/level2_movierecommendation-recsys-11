@@ -74,16 +74,15 @@
 
 | Model | EASE | ADMMSLIM | MultiVAE | RecVAE | S3Rec | GRU4Rec |
 |:---------:|:------:|:----------:|:----------:|:--------:|:-------:|:---------:|
-| Recall@10 | 0.1594 | 0.1546 | 0.1403 | 0.1514 | 0.0898 | 0.051 |
+| **Recall@10** | 0.1594 | 0.1546 | 0.1403 | 0.1514 | 0.0898 | 0.051 |
 
-<br>
+<br><br>
 
 앙상블 성능
 
 ![Untitled](https://github.com/boostcampaitech5/level2_movierecommendation-recsys-11/assets/93419379/5e17a671-aedf-4a17-bcc6-57507e86e1fc)
 
-
-<br>
+<br><br>
 
 **최종 성능**
 
