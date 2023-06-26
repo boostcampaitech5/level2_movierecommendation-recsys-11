@@ -12,7 +12,6 @@
   <img src="https://img.shields.io/badge/wandb-FFBE00?logo=weightsandbiases&logoColor=white" alt="weightsandbiases badge">
  <img src="https://img.shields.io/badge/-Sweep-orange" alt="scikitlearn badge">
 </div>
-
  
 ## Members
 
@@ -67,12 +66,11 @@
 | 최민수 | RecBole template 구축,  모델 구현/실현 (EASE, DeepFM, NCF) |
 </div>
 
-
 ## Dataset
 
 ```
 data/
-├── traing_ratings.csv
+├── train_ratings.csv
 ├── genres.tsv
 ├── directors.tsv
 ├── titles.tsv
@@ -80,25 +78,18 @@ data/
 └── years.tsv
 ```
 
-
 ## Models & Ensemble
 
 단일 모델 성능
-
 
 | Model | EASE | ADMMSLIM | MultiVAE | RecVAE | S3Rec | GRU4Rec |
 |:---------:|:------:|:----------:|:----------:|:--------:|:-------:|:---------:|
 | **Recall@10** | 0.1594 | 0.1546 | 0.1403 | 0.1514 | 0.0898 | 0.051 |
 
-
 <br>
 
 **최종 성능**
 
-
 ||🔒 Private|🔑 Public|
 |:---:|:---:|:---:|
 |Recall@10|0.1637|0.1648|
-
-
-
